@@ -75,6 +75,6 @@ The new fitted model is √y=84.84+0.000095X1+32.86X2-57.22X4.
 
 ![pred](./img/pred.png)
 
-The prediction value for x1=50000, x2=3, x4=2 is y=35420.55
+The prediction value for x1=50000, x2=3, x4=2 is y=35420.55. 
 
 ![prediction](./img/prediction.png)
