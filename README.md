@@ -3,11 +3,14 @@ This data is about traffic monitoring. One of the most important traffic monitor
 It is defined as the average, over a year, of the number of vehicles that pass through a particular section of a road each day.
 
 Consider the first column (aadt) of the data to be the response, and
+
 X1: population of county in which road section in located--the second column of data;
+
 X2: number of lanes in road section-- the third column of data ;
+
 X3: width of road section (in feet)-the fourth column of data;
-Control (X4): two-category quality variable indicating whether or not there is control of
-access to road section (1=access control; 0=no access control). 
+
+Control (X4): two-category quality variable indicating whether or not there is control of access to road section (1=access control; 0=no access control). 
 
 # 1. Graphic display of the observed data
 First, we import the data in a dataframe and plot a scatter plot matrix and correlation
@@ -69,11 +72,9 @@ The new fitted model is √y=84.84+0.000095X1+32.86X2-57.22X4.
 ![residual_plot3](./img/residual_plot3.png)
 
 # 5 Prediction
-For l=c^' β, we use l ̂=c'β ̂ to be the estimator and a 100(1-α)% CI is
-l ̂±t_(n-2)^(α/2) s√(c'〖(X^' X)〗^(-1) c)
-For l=c^' β+ϵ with ε~N(0,c_3 σ^2), we use l ̂=c'β ̂ to be the estimator and a 
-100(1-α)% CI is
-l ̂±t_(n-2)^(α/2) s√(c_3+c'〖(X^' X)〗^(-1) c)
+
+![pred](./img/pred.png)
+
 The prediction value for x1=50000, x2=3, x4=2 is y=35420.55
 
 ![prediction](./img/prediction.png)
